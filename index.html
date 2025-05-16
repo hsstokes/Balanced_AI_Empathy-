@@ -191,7 +191,7 @@
                 // Use raw canvas API for blend mode but with higher opacity
                 let ctx = drawingContext;
                 ctx.save();
-                ctx.globalCompositeOperation = 'darken';
+                ctx.globalCompositeOperation = 'normal';
                 ctx.globalAlpha = 1.0; // Less transparent (0.9 -> 1.0)
                 
                 // Draw the frame at exact dimensions
