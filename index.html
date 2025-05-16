@@ -191,7 +191,7 @@
                 // Use raw canvas API for blend mode but with higher opacity
                 let ctx = drawingContext;
                 ctx.save();
-                ctx.globalCompositeOperation = 'normal';
+                ctx.globalCompositeOperation = 'darken';
                 ctx.globalAlpha = 1.0; // Less transparent (0.9 -> 1.0)
                 
                 // Draw the frame at exact dimensions
@@ -293,7 +293,7 @@
             }
             
             // Sound loading
-            soundFormats('mp3', 'ogg');
+            soundFormats('mp3');
             bulletSound = loadSound('sounds/Bulletsound.mp3');
         }
         
